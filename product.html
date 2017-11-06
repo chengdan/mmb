@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>慢慢买</title>
+    <link rel="stylesheet" href="lib/fa/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/product.css">
+</head>
+<body>
+<div class="container">
+    <!--头部-->
+    <div class="mmb_header">
+        <div class="logo">
+            <img src="images/header_logo.png" alt="">
+        </div>
+        <div class="down">
+            <img src="images/header_app.png" alt="">
+        </div>
+    </div>
+
+    <!--搜索框-->
+    <div class="mmb_search">
+        <input type="text" placeholder="请输入您想比价的商品">
+        <button>搜索</button>
+    </div>
+
+    <!--导航-->
+    <div class="mmb_nav">
+        <ul class="clearfix">
+
+        </ul>
+    </div>
+
+    <!--产品内容-->
+    <div class="mmb_content">
+        <div class="lis_title">
+            <ul class="clearfix">
+
+            </ul>
+        </div>
+        <div class="content_text">
+
+        </div>
+        <div class="content_tab">
+            <ul class="clearfix">
+                <li><a href="javascript:;">比价购买</a></li>
+                <li><a href="javascript:;">差评参数</a></li>
+                <li><a href="javascript:;">评价（2322）</a></li>
+            </ul>
+        </div>
+        <div class="content_all">
+
+        </div>
+        <div class="content_pj">
+            <div class="pj_title">  网友评价 </div>
+            <ul>
+
+            </ul>
+        </div>
+        <div class="content_more">
+            <a href="#">更多优惠信息&gt;&gt;</a>
+        </div>
+    </div>
+
+
+
+    <!--底部-->
+    <div class="mmb_footer">
+        <div class="footer_info clearfix">
+            <a href="#">登录</a>
+            <a href="#">注册</a>
+            <a href="#"><span class="fa fa-arrow-up"></span>返回顶部</a>
+        </div>
+        <div class="footer_bottom">
+            <p><a href="#" class="now">手机APP下载</a>
+                <a href="#">慢慢买手机版</a>
+                <span>-- 掌上比价平台</span></p>
+            <p>m.manmanbuy.com</p>
+        </div>
+    </div>
+</div>
+
+<script type="text/html" id="tpl">
+    <li><a href="mmbIndex.html">首页&gt;</a></li>
+    <li><a href="category.html">全部分类&gt;</a></li>
+    {{each result v i}}
+    <li><a href="category.html">{{v.productName}}&gt;</a></li>
+    {{/each}}
+    <li><a href="javascript:;">筛选</a></li>
+</script>
+<script type="text/html" id="tpl2">
+    {{each result v i}}
+    <div class="content_name">
+        <p>{{v.productName}}</p>
+    </div>
+    <div class="content_pic">
+        <%- v.productImg%>
+        <img src="images/ic_cu.png" alt="">
+    </div>
+    {{/each}}
+</script>
+
+<script type="text/html" id="tpl3">
+    {{each result v i}}
+    <%- v.bjShop%>
+    {{/each}}
+</script>
+
+<script type="text/html" id="tpl4">
+    {{each result v i}}
+    <li>
+        <p><span>{{v.comName}}</span><span class="fr">{{v.comTime}}</span></p>
+        <p class="fr">{{v.comFrom}}</p>
+        <div class="nr">{{v.comContent}}</div>
+    </li>
+    {{/each}}
+</script>
+
+
+<script src="lib/artTemplate/template-web.js"></script>
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/product.js"></script>
+</body>
+</html>

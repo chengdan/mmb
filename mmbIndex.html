@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>慢慢买</title>
+    <link rel="stylesheet" href="lib/fa/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<div class="container" id="up">
+    <!--头部-->
+    <div class="mmb_header">
+        <div class="logo">
+            <img src="images/header_logo.png" alt="">
+        </div>
+        <div class="down">
+            <img src="images/header_app.png" alt="">
+        </div>
+    </div>
+
+    <!--搜索框-->
+    <div class="mmb_search">
+        <input type="text" placeholder="请输入您想比价的商品">
+        <button>搜索</button>
+    </div>
+
+    <!--导航-->
+    <div class="mmb_nav">
+        <ul class="clearfix">
+
+        </ul>
+    </div>
+
+    <!--产品内容-->
+    <div class="mmb_content">
+        <div class="content_text">
+            <span class="text">超值折扣推荐</span>
+            <span class="fa fa-chevron-circle-right"></span>
+        </div>
+        <div class="content_info">
+            <ul class="clearfix">
+
+
+            </ul>
+        </div>
+        <div class="content_more">
+            <a href="#">更多优惠信息&gt;&gt;</a>
+        </div>
+    </div>
+
+    <!--底部-->
+    <div class="mmb_footer">
+        <div class="footer_title">
+            <span>品牌排行</span>
+            <span class="fa fa-chevron-circle-right fr"></span>
+        </div>
+        <div class="footer_info clearfix">
+            <a href="#">登录</a>
+            <a href="#">注册</a>
+            <a href="#up"><span class="fa fa-arrow-up"></span>返回顶部</a>
+        </div>
+        <div class="footer_bottom">
+            <p><a href="#" class="now">手机APP下载</a>
+                <a href="#">慢慢买手机版</a>
+                <span>-- 掌上比价平台</span></p>
+            <p>m.manmanbuy.com</p>
+        </div>
+    </div>
+</div>
+
+<script type="text/html" id="tpl">
+    {{each result v i}}
+    <li>
+        <a href="#" data-id="{{v._id}}">
+            <p>{{v.name}}</p>
+        </a>
+    </li>
+    {{/each}}
+</script>
+
+<script type="text/html" id="tpl2">
+    {{each result v i}}
+    <li>
+        <a href="#">
+            <%- v.productImgSm %>
+            <div class="all">
+                <div class="info_title">{{v.productName}}<span class="price">{{v.productPinkage}}</span></div>
+                <p><span class="text">{{v.productFrom}} |{{v.productTime}}</span><span class="fa fa-comment-o fr">{{v.productComCount}}</span></p>
+            </div>
+        </a>
+    </li>
+    {{/each}}
+</script>
+
+<script src="lib/artTemplate/template-web.js"></script>
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

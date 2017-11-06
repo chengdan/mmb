@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>慢慢买</title>
+    <link rel="stylesheet" href="lib/fa/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/money.css">
+</head>
+<body>
+<div class="container">
+    <!--头部-->
+    <div class="mmb_header">
+        <div class="logo">
+            <a href="javascript:history.go(-1);"><span class="fa fa-chevron-left "></span></a>
+        </div>
+        <h1>省钱控 - 最新优惠</h1>
+        <div class="down">
+            <img src="images/header_app.png" alt="">
+        </div>
+    </div>
+
+
+    <!--导航-->
+    <div class="mmb_nav">
+        <ul class="clearfix">
+
+        </ul>
+    </div>
+
+    <!--产品内容-->
+    <div class="mmb_content">
+        <div class="content_info">
+            <ul class="clearfix">
+
+            </ul>
+        </div>
+        <div class="lis_page">
+            <ul>
+                <li><a href="javascript:;" class="up">上一页</a></li>
+                <li><select name="" id="">
+                    <option value="">1/14</option>
+                    <option value="">2/14</option>
+                    <option value="">3/14</option>
+                    <option value="">4/14</option>
+                    <option value="">5/14</option>
+                    <option value="">6/14</option>
+                    <option value="">7/14</option>
+                    <option value="">8/14</option>
+                    <option value="">9/14</option>
+                    <option value="">10/14</option>
+                    <option value="">11/14</option>
+                    <option value="">12/14</option>
+                    <option value="">13/14</option>
+                    <option value="">14/14</option>
+                </select></li>
+                <li><a href="javascript:;" class="down">下一页</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--底部-->
+    <div class="mmb_footer">
+        <div class="footer_info clearfix">
+            <a href="#">登录</a>
+            <a href="#">注册</a>
+            <a href="#"><span class="fa fa-arrow-up"></span>返回顶部</a>
+        </div>
+        <div class="footer_bottom">
+            <p><a href="#" class="now">手机APP下载</a>
+                <a href="#">慢慢买手机版</a>
+                <span>-- 掌上比价平台</span></p>
+            <p>m.manmanbuy.com</p>
+        </div>
+    </div>
+</div>
+
+
+
+<script type="text/html" id="tpl">
+    {{each result v i}}
+    <li>
+        <a href="moneyProduct.html?productid={{v.productId}}">
+            <%- v.productImgSm %>
+            <div class="all">
+                <div class="info_title">{{v.productName}}<span class="price">{{v.productPinkage}}</span></div>
+                <p><span class="text">{{v.productFrom}} |{{v.productTime}}</span><span class="fa fa-comment-o fr">{{v.productComCount}}</span></p>
+            </div>
+        </a>
+    </li>
+    {{/each}}
+</script>
+
+<script src="lib/artTemplate/template-web.js"></script>
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/money.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>慢慢买</title>
+    <link rel="stylesheet" href="lib/fa/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/moneyProduct.css">
+</head>
+<body>
+<div class="container">
+    <!--头部-->
+    <div class="mmb_header">
+        <div class="logo">
+            <a href="javascript:history.go(-1);"><span class="fa fa-chevron-left "></span></a>
+        </div>
+        <h1>国内折扣</h1>
+        <div class="down">
+            <img src="images/header_app.png" alt="">
+        </div>
+    </div>
+
+
+    <!--产品内容-->
+    <div class="mmb_content">
+
+    </div>
+
+
+    <!--底部-->
+    <div class="mmb_footer">
+        <div class="footer_info clearfix">
+            <a href="#">登录</a>
+            <a href="#">注册</a>
+            <a href="#"><span class="fa fa-arrow-up"></span>返回顶部</a>
+        </div>
+        <div class="footer_bottom">
+            <p><a href="#" class="now">手机APP下载</a>
+                <a href="#">慢慢买手机版</a>
+                <span>-- 掌上比价平台</span></p>
+            <p>m.manmanbuy.com</p>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/html" id="tpl">
+    {{each result v i}}
+    <div class="title">
+        <h3>{{v.productName}}</h3>
+        <p><span>{{v.productFrom}}</span><span>{{v.productTime}}</span><span>{{v.productTips}}</span></p>
+    </div>
+    <div class="info">
+        <%- v.productImgSm %>
+        <p>{{v.productInfo}}</p>
+        <p>{{v.productInfo1}}</p>
+    </div>
+    <div class="pic">
+        <%- v.productImgLg%>
+    </div>
+    <div class="area">
+        <%- v.productCity%>
+    </div>
+    <div class="go">
+        <a href="#">前往购买</a>
+    </div>
+    <div class="maxPic">
+        <img src="images/mmbweixin2%20(1).png" alt="">
+    </div>
+    <%- v.productComment%>
+    {{/each}}
+</script>
+
+
+<script src="lib/artTemplate/template-web.js"></script>
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/moneyProduct.js"></script>
+</body>
+</html>

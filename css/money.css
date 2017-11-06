@@ -1,0 +1,77 @@
+.mmb_header{
+    position: relative;
+}
+.mmb_header .fa{
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+}
+.mmb_header img{
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+.mmb_header h1{
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+}
+.content_info{
+    width: 100%;
+    background-color: #fff;
+}
+.content_info li{
+    width: 100%;
+    height: 120px;
+    padding: 10px;
+    float: left;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+}
+.content_info a{
+    display: block;
+    width: 100%;
+}
+.content_info img{
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+.content_info .all{
+    overflow: hidden;
+}
+.content_info .info_title{
+    height: 80px;
+    position: relative;
+}
+.content_info .info_title .price{
+    color: #ff6c00;
+}
+.content_info .all p{
+    color: #ccc;
+    font-size: 12px;
+}
+.lis_page{
+    height: 50px;
+    width: 100%;
+    background-color: #fff;
+    padding-top: 8px;
+}
+.lis_page li{
+    height: 50px;
+    line-height: 50px;
+    width: 33.33%;
+    float: left;
+    text-align: center;
+}
+.lis_page li select{
+    padding: 5px 15px;
+    font-size: 18px;
+}
+.lis_page li a{
+    padding: 8px 15px;
+    border: 1px solid #ccc;
+    background: linear-gradient(#fff,#ccc);
+    border-radius: 5px;
+}
