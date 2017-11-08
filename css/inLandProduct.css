@@ -1,0 +1,123 @@
+.mmb_header{
+    position: relative;
+}
+.mmb_header .fa{
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+}
+.mmb_header img{
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+.mmb_header h1{
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+}
+.mmb_content{
+    background-color: #fff;
+    padding: 10px;
+}
+.mmb_content .title{
+    padding: 10px 10px;
+}
+.mmb_content .title h3{
+    padding-bottom: 20px;
+}
+.mmb_content .title p{
+    font-size: 12px;
+    color: #666;
+}
+.mmb_content .info{
+    padding: 10px;
+}
+.mmb_content .info img{
+    width: 120px;
+    height: 120px;
+    float: right;
+}
+.mmb_content .info p{
+    padding-bottom: 10px;
+    color: #606060;
+}
+.mmb_content .pic{
+    width: 100%;
+}
+.mmb_content .pic img{
+    width: 45%;
+    padding-bottom: 20px;
+}
+.mmb_content .area{
+    width: 174px;
+    margin: 0 auto;
+    padding:0 10px 10px 10px ;
+    border: 1px solid #f5f5f5;
+}
+.mmb_content .area li{
+    border-bottom: 1px dashed #ccc;
+    font-size: 14px;
+}
+.mmb_content .area strong{
+    float: right;
+    color: #f27b04;
+}
+.mmb_content .go{
+    width: 100%;
+    padding: 10px;
+}
+.mmb_content .go a{
+    height: 30px;
+    width: 100%;
+    line-height: 30px;
+    display: block;
+    background: #FF9000;
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+}
+.mmb_content .maxPic{
+    width: 100%;
+}
+.mmb_content .maxPic img{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.mmb_content .title h3{
+    padding-bottom: 5px;
+}
+.mmb_content .title .price{
+    color: #ff6c00;
+    font-size: 15px;
+    font-weight: 700;
+    padding-bottom: 15px;
+}
+.mmb_content .reply .title{
+    padding-bottom: 10px;
+}
+.mmb_content .form textarea{
+    width: 100%;
+    height: 150px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.mmb_content .form .ctrl input{
+    background-color: #ff841d;
+    position: absolute;
+    padding: 10px 15px;
+    bottom: 5px;
+    right: 1px;
+    border-radius: 5px;
+    color: #fff;
+}
+.mmb_content .reply .form{
+    position: relative;
+}
+
+.mmb_content .tit{
+    margin-top: 10px;
+}

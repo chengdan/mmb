@@ -7,7 +7,7 @@
     <title>慢慢买</title>
     <link rel="stylesheet" href="lib/fa/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/moneyProduct.css">
+    <link rel="stylesheet" href="css/inLandProduct.css">
 </head>
 <body>
 <div class="container" id="up">
@@ -50,18 +50,16 @@
     {{each result v i}}
     <div class="title">
         <h3>{{v.productName}}</h3>
+        <div class="price">{{v.productPrice}}</div>
         <p><span>{{v.productFrom}}</span><span>{{v.productTime}}</span><span>{{v.productTips}}</span></p>
     </div>
     <div class="info">
-        <%- v.productImgSm %>
+        <img src="images/20170417214649119.jpg" alt="">
         <p>{{v.productInfo}}</p>
         <p>{{v.productInfo1}}</p>
     </div>
     <div class="pic">
-        <%- v.productImgLg%>
-    </div>
-    <div class="area">
-        <%- v.productCity%>
+        <%- v.productImg%>
     </div>
     <div class="go">
         <a href="#">前往购买</a>
@@ -77,6 +75,6 @@
 <script src="lib/artTemplate/template-web.js"></script>
 <script src="lib/jquery/jquery.min.js"></script>
 <script src="js/common.js"></script>
-<script src="js/moneyProduct.js"></script>
+<script src="js/inLandProduct.js"></script>
 </body>
 </html>

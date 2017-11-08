@@ -7,7 +7,7 @@
     <title>慢慢买</title>
     <link rel="stylesheet" href="lib/fa/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/moneyProduct.css">
+    <link rel="stylesheet" href="css/coupon.css">
 </head>
 <body>
 <div class="container" id="up">
@@ -16,17 +16,21 @@
         <div class="logo">
             <a href="javascript:history.go(-1);"><span class="fa fa-chevron-left "></span></a>
         </div>
-        <h1>国内折扣</h1>
+        <h1>优惠券</h1>
         <div class="down">
             <img src="images/header_app.png" alt="">
         </div>
     </div>
 
 
+
     <!--产品内容-->
     <div class="mmb_content">
+        <ul class="clearfix">
 
+        </ul>
     </div>
+
 
 
     <!--底部-->
@@ -45,38 +49,17 @@
     </div>
 </div>
 
-
 <script type="text/html" id="tpl">
     {{each result v i}}
-    <div class="title">
-        <h3>{{v.productName}}</h3>
-        <p><span>{{v.productFrom}}</span><span>{{v.productTime}}</span><span>{{v.productTips}}</span></p>
-    </div>
-    <div class="info">
-        <%- v.productImgSm %>
-        <p>{{v.productInfo}}</p>
-        <p>{{v.productInfo1}}</p>
-    </div>
-    <div class="pic">
-        <%- v.productImgLg%>
-    </div>
-    <div class="area">
-        <%- v.productCity%>
-    </div>
-    <div class="go">
-        <a href="#">前往购买</a>
-    </div>
-    <div class="maxPic">
-        <img src="images/mmbweixin2%20(1).png" alt="">
-    </div>
-    <%- v.productComment%>
+    <li><a href="couponProduct.html?couponId={{v.couponId}}">
+        <img src="{{v.couponImg}}" alt="">
+        <p>{{v.couponTitle}}</p>
+    </a></li>
     {{/each}}
 </script>
 
-
 <script src="lib/artTemplate/template-web.js"></script>
 <script src="lib/jquery/jquery.min.js"></script>
-<script src="js/common.js"></script>
-<script src="js/moneyProduct.js"></script>
+<script src="js/coupon.js"></script>
 </body>
 </html>

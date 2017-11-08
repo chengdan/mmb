@@ -2,17 +2,13 @@
  * Created by 程丹 on 2017/11/6.
  */
 $(function () {
-    var search = location.search;
-    var obj = {};
-    search = search.slice(1);
-    var arr = search.split("&");
-    var id = arr[0].split("=")[1];
+    var id = getId();
 
     var page = 1;
 
     $.ajax({
         type:"get",
-        url:"http://192.168.32.31:9090/api/getcategorybyid",
+        url:"http://192.168.32.29:9090/api/getcategorybyid",
         data:{
             categoryid:id
         },
@@ -26,7 +22,7 @@ $(function () {
     function render() {
         $.ajax({
             type : "get",
-            url:"http://192.168.32.31:9090/api/getproductlist",
+            url:"http://192.168.32.29:9090/api/getproductlist",
             data:{
                 categoryid:id,
                 pageid : page

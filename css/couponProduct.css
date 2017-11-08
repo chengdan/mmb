@@ -1,0 +1,113 @@
+.mmb_header{
+    background-color: #f4483e;
+}
+.mmb_header .fa{
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+}
+.mmb_header img{
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+.mmb_header h1{
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+}
+.mmb_content{
+    width: 100%;
+}
+.mmb_content .title{
+    width: 100%;
+    font-size: 12px;
+    padding: 8px 0;
+    text-align: center;
+    color: #999;
+}
+.mmb_content .content li{
+    width: 100%;
+    height: 138px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+.mmb_content .content li img{
+    width: 100px;
+    height: 80px;
+    float: left;
+    padding-right: 10px;
+}
+.mmb_content .content li .all{
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.mmb_content .content li .tit{
+    color: #333;
+    line-height: 20px;
+    font-size: 14px;
+}
+.mmb_content .content li .small{
+    position: absolute;
+    bottom: 0;
+}
+.mmb_content .content li .price{
+    font-weight: 700;
+    font-size: 15px;
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+.mmb_content .content li .time{
+    color:#EE7700 ;
+    font-size: 12px;
+    padding-top: 10px;
+}
+.mmb_content .content li span{
+    position: absolute;
+    right: 5px;
+    bottom: 60px;
+    font-size: 35px;
+    display: block;
+    color: #999;
+}
+.container{
+    position: relative;
+}
+.container .modal{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display: none;
+}
+.container .modal.now{
+    display: block;
+}
+.modal img{
+    display: block;
+    margin: 200px auto;
+    width: 200px;
+    height: 160px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

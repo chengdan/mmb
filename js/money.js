@@ -6,7 +6,7 @@ $(function () {
     function render() {
         $.ajax({
             type : "get",
-            url:"http://192.168.32.31:9090/api/getmoneyctrl",
+            url:"http://192.168.32.29:9090/api/getmoneyctrl",
             data:{
                 pageid : page
             },
@@ -37,7 +37,7 @@ $(function () {
             page = 14;
         }
         render();
-        $(".lis_page option").html((page+1)+"/14");
+        $(".lis_page option").html((page-1)+"/14");
     });
 
 

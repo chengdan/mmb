@@ -7,7 +7,7 @@
     <title>慢慢买</title>
     <link rel="stylesheet" href="lib/fa/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/moneyProduct.css">
+    <link rel="stylesheet" href="css/inLand.css">
 </head>
 <body>
 <div class="container" id="up">
@@ -25,7 +25,9 @@
 
     <!--产品内容-->
     <div class="mmb_content">
+        <ul class="clearfix">
 
+        </ul>
     </div>
 
 
@@ -45,38 +47,22 @@
     </div>
 </div>
 
-
 <script type="text/html" id="tpl">
     {{each result v i}}
-    <div class="title">
-        <h3>{{v.productName}}</h3>
-        <p><span>{{v.productFrom}}</span><span>{{v.productTime}}</span><span>{{v.productTips}}</span></p>
-    </div>
-    <div class="info">
-        <%- v.productImgSm %>
-        <p>{{v.productInfo}}</p>
-        <p>{{v.productInfo1}}</p>
-    </div>
-    <div class="pic">
-        <%- v.productImgLg%>
-    </div>
-    <div class="area">
-        <%- v.productCity%>
-    </div>
-    <div class="go">
-        <a href="#">前往购买</a>
-    </div>
-    <div class="maxPic">
-        <img src="images/mmbweixin2%20(1).png" alt="">
-    </div>
-    <%- v.productComment%>
+    <li><a href="inLandProduct.html?productId={{v.productId}}">
+        <%- v.productImg%>
+        <p class="title">{{v.productName}}</p>
+        <div class="all">
+            <p class="price">{{v.productPrice}}</p>
+            <p class="by">{{v.productFrom}} | {{v.productTime}}</p>
+        </div>
+    </a></li>
     {{/each}}
 </script>
 
 
 <script src="lib/artTemplate/template-web.js"></script>
 <script src="lib/jquery/jquery.min.js"></script>
-<script src="js/common.js"></script>
-<script src="js/moneyProduct.js"></script>
+<script src="js/inLand.js"></script>
 </body>
 </html>

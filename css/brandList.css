@@ -1,0 +1,184 @@
+.mmb_content{
+    width: 100%;
+}
+.mmb_content .lis_title{
+    width: 100%;
+    height: 38px;
+    background:linear-gradient(#fff,#ccc);
+    border: 1px solid #ccc;
+    position: relative;
+    padding: 0 10px;
+}
+.lis_title li{
+    float: left;
+    line-height: 36px;
+    font-size: 14px;
+}
+.lis_title li:last-child{
+    display: block;
+    line-height: 28px;
+    height: 28px;
+    padding: 0 15px;
+    background: linear-gradient(#ccc,#fff);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: absolute;
+    top: 5px;
+    right: 15px;
+}
+.mmb_content .tit span{
+    display: block;
+    height: 40px;
+    line-height:40px;
+    padding: 0 10px;
+    background-color: #eee;
+    border-bottom: 1px solid #ccc;
+    border-top: 3px solid #999;
+    color: #874604;
+    font-size: 14px;
+    font-weight: 700;
+}
+.mmb_content .info{
+    width: 100%;
+}
+.mmb_content .info li{
+    width: 100%;
+    height: 64px;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    position: relative;
+}
+.mmb_content .info li .box{
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    float: left;
+    background-color: #c9c9c9;
+    text-align: center;
+    font-weight: 700;
+    color: #fff;
+}
+.mmb_content .info li .box.red{
+    background-color: red;
+}
+.mmb_content .info li .box.yellow{
+    background-color: #ff9314;
+}
+.mmb_content .info li .box.green{
+    background-color: #8adf5b;
+}
+.mmb_content .info li .all{
+    overflow: hidden;
+    padding-left: 10px;
+}
+.mmb_content .info .all .xs{
+    font-size: 14px;
+    color: #999;
+    margin-top: 3px;
+}
+.mmb_content .info li span{
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    font-size: 30px;
+    color: #ccc;
+}
+.mmb_content .content{
+    width: 100%;
+}
+.mmb_content .content li{
+    width: 100%;
+    height: 120px;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+}
+.mmb_content .content li img{
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+.mmb_content .content .contentBox{
+    height: 100%;
+    overflow: hidden;
+    padding-left: 10px;
+    position: relative;
+}
+.mmb_content .content .contentBox .bottom{
+    width: 98%;
+    position: absolute;
+    bottom: 0;
+}
+.mmb_content .content .bottom .price{
+    color: #ea3900;
+    font-size: 18px;
+}
+.mmb_content .content .bottom .star{
+    color: #ff9314;
+    font-size: 20px;
+}
+.mmb_content .content .bottom span{
+    padding-right:10px;
+}
+.mmb_content .content .bottom .em{
+    font-size: 12px;
+    color: #666;
+}
+.mmb_content .plBox{
+    width: 100%;
+    background-color: #fff;
+}
+.mmb_content .plBox li{
+    padding: 10px;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+.mmb_content .plBox .one img{
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+.mmb_content .plBox .one p{
+    overflow: hidden;
+    padding-left: 10px;
+    color: #999;
+    font-size: 14px;
+}
+.mmb_content .plBox .tow{
+    width: 100%;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f8f8f8;
+    position: relative;
+    margin-bottom: 5px;
+}
+.mmb_content .plBox .tow .name{
+    color: #4f6900;
+    font-size: 14px;
+}
+.mmb_content .plBox .tow .star{
+    color: #ff9314;
+    font-size: 20px;
+}
+.mmb_content .plBox .tow i{
+    font-size: 14px;
+    color: #999;
+}
+.mmb_content .plBox .tow s{
+    position: absolute;
+    top: -20px;
+    left: 35px;
+    /*background-color: #f8f8f8;*/
+    border: 10px solid #f8f8f8;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-top: 10px solid transparent;
+}
+
+
+
+
+
+
+
+

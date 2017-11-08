@@ -7,7 +7,7 @@
     <title>慢慢买</title>
     <link rel="stylesheet" href="lib/fa/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/moneyProduct.css">
+    <link rel="stylesheet" href="css/baicaijia.css">
 </head>
 <body>
 <div class="container" id="up">
@@ -16,17 +16,32 @@
         <div class="logo">
             <a href="javascript:history.go(-1);"><span class="fa fa-chevron-left "></span></a>
         </div>
-        <h1>国内折扣</h1>
+        <h1>白菜价-淘宝内部券</h1>
         <div class="down">
             <img src="images/header_app.png" alt="">
         </div>
     </div>
 
+    <!--导航-->
+    <div class="mmb_nav">
+        <div class="nav">
+            <ul class="tabs clearfix">
+
+            </ul>
+            <div class="search">
+                <img src="images/Screenshot_2.png" alt="">
+            </div>
+        </div>
+    </div>
 
     <!--产品内容-->
     <div class="mmb_content">
+        <ul class="clearfix">
+
+        </ul>
 
     </div>
+
 
 
     <!--底部-->
@@ -45,38 +60,32 @@
     </div>
 </div>
 
-
 <script type="text/html" id="tpl">
     {{each result v i}}
-    <div class="title">
-        <h3>{{v.productName}}</h3>
-        <p><span>{{v.productFrom}}</span><span>{{v.productTime}}</span><span>{{v.productTips}}</span></p>
-    </div>
-    <div class="info">
-        <%- v.productImgSm %>
-        <p>{{v.productInfo}}</p>
-        <p>{{v.productInfo1}}</p>
-    </div>
-    <div class="pic">
-        <%- v.productImgLg%>
-    </div>
-    <div class="area">
-        <%- v.productCity%>
-    </div>
-    <div class="go">
-        <a href="#">前往购买</a>
-    </div>
-    <div class="maxPic">
-        <img src="images/mmbweixin2%20(1).png" alt="">
-    </div>
-    <%- v.productComment%>
+    <li class="{{i=== 0 ? 'active' : ''}}" data-id="{{v.titleId}}"><a href="javascript:;">{{v.title}}</a></li>
     {{/each}}
 </script>
 
+<script type="text/html" id="tpl2">
+    {{each result v i}}
+    <li>
+        <a href="#">
+            <%- v.productImg%>
+            <div class="nav">
+                <p class="title"><%- v.productName%></p>
+                <p class="price"><%- v.productPrice%></p>
+                <div class="all">
+                    <%- v.productCouponRemain%>
+                    <p class="bottom"><span class="dj"><%- v.productCoupon%> </span><span class="btn fr"><%- v.productHref%></span></p>
+                </div>
+            </div>
+        </a>
+    </li>
+    {{/each}}
+</script>
 
 <script src="lib/artTemplate/template-web.js"></script>
 <script src="lib/jquery/jquery.min.js"></script>
-<script src="js/common.js"></script>
-<script src="js/moneyProduct.js"></script>
+<script src="js/baicaijia.js"></script>
 </body>
 </html>

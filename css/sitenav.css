@@ -1,0 +1,53 @@
+.mmb_header{
+    position: relative;
+}
+.mmb_header .fa{
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+}
+.mmb_header img{
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+.mmb_header h1{
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+}
+.mmb_content {
+    background-color: #fff;
+    width: 100%;
+    padding: 10px 10px 20px 10px;
+}
+.mmb_content ul{
+    width: 300px;
+    margin: 0 auto;
+}
+.mmb_content li{
+    background-color: #f4f4f4;
+    border: 1px solid #bfbfbf;
+    float: left;
+    padding:8px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+.mmb_content li img{
+    padding-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

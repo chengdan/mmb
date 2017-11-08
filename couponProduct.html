@@ -7,7 +7,7 @@
     <title>慢慢买</title>
     <link rel="stylesheet" href="lib/fa/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/moneyProduct.css">
+    <link rel="stylesheet" href="css/couponProduct.css">
 </head>
 <body>
 <div class="container" id="up">
@@ -16,18 +16,21 @@
         <div class="logo">
             <a href="javascript:history.go(-1);"><span class="fa fa-chevron-left "></span></a>
         </div>
-        <h1>国内折扣</h1>
+        <h1>肯德基优惠券</h1>
         <div class="down">
             <img src="images/header_app.png" alt="">
         </div>
     </div>
 
-
     <!--产品内容-->
     <div class="mmb_content">
+        <div class="title"> --点餐前出示手机中的优惠券，即可享受优惠--</div>
+        <div class="content">
+            <ul>
 
+            </ul>
+        </div>
     </div>
-
 
     <!--底部-->
     <div class="mmb_footer">
@@ -43,40 +46,31 @@
             <p>m.manmanbuy.com</p>
         </div>
     </div>
-</div>
 
+    <div class="modal">
+    </div>
+
+</div>
 
 <script type="text/html" id="tpl">
     {{each result v i}}
-    <div class="title">
-        <h3>{{v.productName}}</h3>
-        <p><span>{{v.productFrom}}</span><span>{{v.productTime}}</span><span>{{v.productTips}}</span></p>
-    </div>
-    <div class="info">
-        <%- v.productImgSm %>
-        <p>{{v.productInfo}}</p>
-        <p>{{v.productInfo1}}</p>
-    </div>
-    <div class="pic">
-        <%- v.productImgLg%>
-    </div>
-    <div class="area">
-        <%- v.productCity%>
-    </div>
-    <div class="go">
-        <a href="#">前往购买</a>
-    </div>
-    <div class="maxPic">
-        <img src="images/mmbweixin2%20(1).png" alt="">
-    </div>
-    <%- v.productComment%>
+    <li><a href="javascript:;">
+        <%- v.couponProductImg%>
+        <div class="all">
+            <p class="tit">{{v.couponProductName}}</p>
+            <p class="price">{{v.couponProductPrice}}</p>
+            <div class="small">
+                <p class="time">{{v.couponProductTime}}</p>
+            </div>
+        </div>
+        <span class="fa fa-angle-right"></span>
+    </a></li>
     {{/each}}
 </script>
-
 
 <script src="lib/artTemplate/template-web.js"></script>
 <script src="lib/jquery/jquery.min.js"></script>
 <script src="js/common.js"></script>
-<script src="js/moneyProduct.js"></script>
+<script src="js/couponProduct.js"></script>
 </body>
 </html>

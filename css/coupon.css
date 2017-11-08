@@ -1,0 +1,58 @@
+.mmb_header{
+    background-color: #f4483e;
+}
+.mmb_header .fa{
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+}
+.mmb_header img{
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+.mmb_header h1{
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+}
+.mmb_content{
+    width: 100%;
+    padding: 20px 10px;
+}
+.mmb_content li{
+    float: left;
+    width: 120px;
+    border: 1px solid #eee;
+    text-align: center;
+    padding: 10px;
+    margin-right: 10px;
+}
+.mmb_content li img{
+    display: block;
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+}
+.mmb_content li p{
+    font-size: 14px;
+     padding-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
