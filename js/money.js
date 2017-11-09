@@ -49,7 +49,7 @@ $(function () {
             // console.log(count);
             var data = [];
             for (var i = 0; i < count; i++){
-                var datas = {page:page,count:count};
+                var datas = {count:count};
                 data.push(datas);
             }
             $(".lis_page select").html(template("tpl2",{msg:data}));

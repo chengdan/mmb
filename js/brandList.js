@@ -26,7 +26,7 @@ $(function () {
         },
         dataType: "json",
         success: function (msg) {
-            console.log(msg);
+            // console.log(msg);
             $(".content ul").html(template("tpl2", msg));
             if(msg.result.length == 0){
                 return;
@@ -42,7 +42,7 @@ $(function () {
                     },
                     dataType: "json",
                     success: function (msg) {
-                        console.log(msg);
+                        // console.log(msg);
                         msg["img"] = img;
                         $(".plBox ul").html(template("tpl3", msg));
                     }

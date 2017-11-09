@@ -62,7 +62,7 @@ $(function () {
             var count = Math.ceil(totalCount / pageSize);
             var data = [];
             for (var i = 0; i < count; i++){
-                var  datas = {page:page,count:count};
+                var  datas = {count:count};
                 data.push(datas);
             }
             // console.log(data);
