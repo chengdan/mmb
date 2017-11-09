@@ -41,20 +41,7 @@
             <ul>
                 <li><a href="javascript:;" class="up">上一页</a></li>
                 <li><select name="" id="">
-                    <option value="">1/14</option>
-                    <option value="">2/14</option>
-                    <option value="">3/14</option>
-                    <option value="">4/14</option>
-                    <option value="">5/14</option>
-                    <option value="">6/14</option>
-                    <option value="">7/14</option>
-                    <option value="">8/14</option>
-                    <option value="">9/14</option>
-                    <option value="">10/14</option>
-                    <option value="">11/14</option>
-                    <option value="">12/14</option>
-                    <option value="">13/14</option>
-                    <option value="">14/14</option>
+
                 </select></li>
                 <li><a href="javascript:;" class="down">下一页</a></li>
             </ul>
@@ -91,6 +78,13 @@
     </li>
     {{/each}}
 </script>
+
+<script type="text/html" id="tpl2">
+    {{each msg v i}}
+    <option value="{{i}}">{{i+1}}/{{v.count}}</option>
+    {{/each}}
+</script>
+
 
 <script src="lib/artTemplate/template-web.js"></script>
 <script src="lib/jquery/jquery.min.js"></script>

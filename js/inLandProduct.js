@@ -6,7 +6,7 @@ $(function () {
     // console.log(id);
     $.ajax({
         type : "get",
-        url:"http://192.168.32.29:9090/api/getdiscountproduct",
+        url:"http://192.168.32.24:9090/api/getdiscountproduct",
         data :{
             productid : id
         },

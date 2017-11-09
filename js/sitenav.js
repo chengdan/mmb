@@ -3,7 +3,7 @@
  */
 $.ajax({
     type : "get",
-    url:"http://192.168.32.29:9090/api/getsitenav",
+    url:"http://192.168.32.24:9090/api/getsitenav",
     dataType : "json",
     success : function (msg) {
         console.log(msg);

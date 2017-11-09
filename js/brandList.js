@@ -5,7 +5,7 @@ $(function () {
     var id = getId();
     $.ajax({
         type: "get",
-        url: "http://192.168.32.29:9090/api/getbrand",
+        url: "http://192.168.32.24:9090/api/getbrand",
         data: {
             brandtitleid: id
         },
@@ -19,7 +19,7 @@ $(function () {
 
     $.ajax({
         type: "get",
-        url: "http://192.168.32.29:9090/api/getbrandproductlist",
+        url: "http://192.168.32.24:9090/api/getbrandproductlist",
         data: {
             brandtitleid: id,
             pagesize : 4
@@ -36,7 +36,7 @@ $(function () {
                 // console.log(productid);
                 $.ajax({
                     type: "get",
-                    url: "http://192.168.32.29:9090/api/getproductcom",
+                    url: "http://192.168.32.24:9090/api/getproductcom",
                     data: {
                         productid: productid
                     },

@@ -4,7 +4,7 @@
 $(function () {
     $.ajax({
         type : "get",
-        url:"http://192.168.32.29:9090/api/getbrandtitle",
+        url:"http://192.168.32.24:9090/api/getbrandtitle",
         dataType : "json",
         success : function (msg) {
             console.log(msg);
