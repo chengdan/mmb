@@ -4,9 +4,10 @@
 $(function () {
     
    var id = getId();
+    // console.log(id);
     $.ajax({
         type: "get",
-        url: "http://1192.168.32.24:9090/api/getcouponproduct",
+        url: "http://192.168.32.24:9090/api/getcouponproduct",
         data: {
             couponid: id
         },
@@ -14,12 +15,13 @@ $(function () {
         success: function (msg) {
             // console.log(msg);
             $(".content ul").html(template("tpl", msg));
-            $(".content ul li").each(function (i,e) {
-                $(this).on("click",function () {
+
+            $(".content ul li").each(function (i, e) {
+                $(this).on("click", function () {
                     $(".modal").addClass("now");
                     $(".modal").append(msg.result[i].couponProductImg);
-                    $(".modal").on("click",function () {
-                        $(this).removeClass("now");
+                    $(".modal span").on("click", function () {
+                        $(".modal").removeClass("now");
                         $(".modal img").remove();
                     })
                 })
@@ -27,3 +29,4 @@ $(function () {
         }
     });
 });
+

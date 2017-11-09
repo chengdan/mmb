@@ -73,20 +73,19 @@
     display: block;
     color: #999;
 }
-.container{
-    position: relative;
-}
-.container .modal{
+/*.container{*/
+    /*position: relative;*/
+/*}*/
+.modal{
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,.5);
-    position: absolute;
+    background-color: rgba(0,0,0,.8);
+    position: fixed;
     top: 0;
-    left: 0;
     z-index: 999;
     display: none;
 }
-.container .modal.now{
+.modal.now{
     display: block;
 }
 .modal img{
@@ -95,7 +94,13 @@
     width: 200px;
     height: 160px;
 }
-
+.modal span{
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+}
 
 
 

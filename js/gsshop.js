@@ -4,10 +4,11 @@
 $(function () {
     var shopid = 0;
     var areaid = 0;
+
     function render() {
         $.ajax({
             type : "get",
-            url:"http://192.168.32.29:9090/api/getgsproduct",
+            url:"http://192.168.32.24:9090/api/getgsproduct",
             data :{
                 shopid :shopid,
                 areaid :areaid
@@ -20,7 +21,6 @@ $(function () {
         })
     }
     render();
-
     $(".tit .jd").on("click",function () {
             $(".nav2").removeClass("now");
             $(".nav").toggleClass("now");
@@ -37,9 +37,10 @@ $(function () {
                             $(".tit .jd span").html($(".nav li a").eq(i).html());
                             $(".nav").removeClass("now");
                             shopid = $(".nav ul li").eq(i).data("id");
+                           // $(".nav ul span").eq(i).addClass("now");
                             render();
                         })
-                    })
+                    });
                 }
             });
         });
@@ -60,13 +61,14 @@ $(function () {
                             $(".tit .city span").html(html);
                             $(".nav").removeClass("now");
                             areaid = $(".nav ul li").eq(i).data("id");
-                            // $(".nav span").eq(i).addClass("now");
+                            // $(".nav ul span").eq(i).addClass("now");
                             render();
                         });
                     })
                 }
             });
         });
+    
     $(".tit .price").on("click",function () {
         $(".nav").removeClass("now");
         $(".nav2").toggleClass("now");
