@@ -32,6 +32,9 @@
     float: left;
     text-align: center;
 }
+.mmb_nav .tit li:last-child{
+    padding-right: 20px;
+}
 .mmb_nav .search{
     width: 37px;
     height: 37px;
