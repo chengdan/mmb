@@ -5,7 +5,7 @@ $(function () {
     var id = getId();
     $.ajax({
         type : "get",
-        url:"http://192.168.32.24:9090/api/getmoneyctrlproduct",
+        url: ip+"/api/getmoneyctrlproduct",
         data :{
             productid : id
         },

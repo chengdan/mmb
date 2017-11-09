@@ -4,7 +4,7 @@
 $(function () {
     $.ajax({
         type:"get",
-        url:"http://192.168.32.24:9090/api/getcategorytitle",
+        url: ip+"/api/getcategorytitle",
         dataType:"json",
         success:function (msg) {
             // console.log(msg);
@@ -15,7 +15,7 @@ $(function () {
                     $(".content_box").eq(i).toggleClass("now");
                     $.ajax({
                         type:"get",
-                        url:'http://192.168.32.24:9090/api/getcategory',
+                        url: ip+'/api/getcategory',
                         data:{
                             titleid:id
                         },

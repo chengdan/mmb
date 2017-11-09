@@ -8,4 +8,5 @@ function getId() {
     var id = arr[0].split("=")[1];
     return id;
 }
+var ip = "http://192.168.32.24:9090";
 

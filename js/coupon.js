@@ -4,7 +4,7 @@
 $(function () {
     $.ajax({
         type : "get",
-        url:"http://192.168.32.24:9090/api/getcoupon",
+        url: ip+"/api/getcoupon",
         dataType : "json",
         success : function (msg) {
             // console.log(msg);

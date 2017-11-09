@@ -7,7 +7,7 @@ $(function () {
 
     $.ajax({
         type : "get",
-        url:"http://192.168.32.24:9090/api/getproduct",
+        url: ip+"/api/getproduct",
         data :{
             productid : id
         },
@@ -22,7 +22,7 @@ $(function () {
 
     $.ajax({
         type : "get",
-        url:"http://192.168.32.24:9090/api/getproductcom",
+        url: ip+"/api/getproductcom",
         data :{
             productid : id
         },

@@ -4,7 +4,7 @@
 $(function () {
     $.ajax({
         type:"get",
-        url:"http://192.168.32.24:9090/api/getindexmenu",
+        url: ip+"/api/getindexmenu",
         dataType:"json",
         success : function (msg) {
             // console.log(msg);
@@ -35,7 +35,7 @@ $(function () {
 
     $.ajax({
         type : "get",
-        url:'http://192.168.32.24:9090/api/getmoneyctrl',
+        url: ip+'/api/getmoneyctrl',
         dataType : "json",
         success : function (msg) {
             // console.log(msg);

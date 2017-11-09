@@ -8,7 +8,7 @@ $(function () {
     function render() {
         $.ajax({
             type : "get",
-            url:"http://192.168.32.24:9090/api/getgsproduct",
+            url: ip+"/api/getgsproduct",
             data :{
                 shopid :shopid,
                 areaid :areaid
@@ -26,7 +26,7 @@ $(function () {
             $(".nav").toggleClass("now");
             $.ajax({
                 type : "get",
-                url:"http://192.168.32.24:9090/api/getgsshop",
+                url: ip+"/api/getgsshop",
                 dataType : "json",
                 success : function (msg) {
                     // console.log(msg);
@@ -50,7 +50,7 @@ $(function () {
             $(".nav").toggleClass("now");
             $.ajax({
                 type : "get",
-                url:"http://192.168.32.24:9090/api/getgsshoparea",
+                url: ip+"/api/getgsshoparea",
                 dataType : "json",
                 success : function (msg) {
                     // console.log(msg);

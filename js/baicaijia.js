@@ -5,7 +5,7 @@ $(function () {
     var id =0;
     $.ajax({
         type : "get",
-        url:"http://192.168.32.24:9090/api/getbaicaijiatitle",
+        url: ip+"/api/getbaicaijiatitle",
         dataType : "json",
         success : function (msg) {
             // console.log(msg);
@@ -24,7 +24,7 @@ $(function () {
     function render() {
         $.ajax({
             type : "get",
-            url:"http://192.168.32.24:9090/api/getbaicaijiaproduct",
+            url: ip+"/api/getbaicaijiaproduct",
             data :{
                 titleid :id
             },
